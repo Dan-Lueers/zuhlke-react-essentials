@@ -8,12 +8,13 @@ export function NameInput() {
       <input
         type="text"
         placeholder="Enter your name"
+        data-testid="name-input"
         onChange={(event) => {
           console.log(event.target.value);
           setName(event.target.value);
         }}
       />
-      <h3>Hello, {name}</h3>
+      <span data-testid="name-output">Hello, {name}</span>
     </>
   );
 }
