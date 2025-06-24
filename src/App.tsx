@@ -15,16 +15,7 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return (
-    <RouterProvider router={router} />
-    // <>
-    //   <Layout>
-    //     <MainMenu />
-    //     <NameInput />
-    //     <PokeList />
-    //   </Layout>
-    // </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

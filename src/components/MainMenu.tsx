@@ -1,7 +1,9 @@
+import { Link } from "react-router";
+
 export function MainMenu() {
   return (
     <>
-      <a href="/">Home</a> | <a href="/">Profile</a>
+      <Link to="/">Home</Link> | <Link to="/pokemon">Profile</Link>
     </>
   );
 }
