@@ -1,8 +1,8 @@
 import "./App.css";
 
-import { MainMenu } from "./components/mainMenu";
+import { MainMenu } from "./components/MainMenu";
 import { Layout } from "./components/Layout";
-import { PokeList } from "./components/pokeList";
+import { PokeList } from "./components/PokeList";
 
 function App() {
   return (
