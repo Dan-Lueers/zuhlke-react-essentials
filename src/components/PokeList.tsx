@@ -1,3 +1,5 @@
+import { pokemonList } from "../mockData/list";
+
 const pokemons = [
   { name: "bulbasaur", url: "https://pokeapi.co/api/v2/pokemon/1/" },
   { name: "ivysaur", url: "https://pokeapi.co/api/v2/pokemon/2/" },
@@ -54,8 +56,8 @@ const pokemons = [
 export function PokeList() {
   return (
     <ul>
-      {pokemons.map((item) => (
-        <li key={item.name}>{item.name}</li>
+      {pokemonList.results.map((item) => (
+        <li key={item.name}><a href={`/pokemon/${item.name}`}>{item.name}</a></li>
       ))}
     </ul>
   );
